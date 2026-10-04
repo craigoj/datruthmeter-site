@@ -1,0 +1,542 @@
+{
+  "root": {
+    "props": {
+      "title": "DaTruthMeter · Where Culture Meets Truth",
+      "previewNote": "Preview for DaTruthMeter Media Group LLC · prepared by CTRL Tech · not live",
+      "tagline": "Black-owned independent media · Ohio",
+      "menu": [
+        {
+          "label": "Episodes",
+          "link": "#season"
+        },
+        {
+          "label": "Resource Guides",
+          "link": "#guides"
+        },
+        {
+          "label": "The Syllabus",
+          "link": "#syllabus"
+        },
+        {
+          "label": "Essays",
+          "link": "#essays"
+        },
+        {
+          "label": "Book T-Mac",
+          "link": "#work"
+        },
+        {
+          "label": "About",
+          "link": "#about"
+        }
+      ],
+      "phoneLabel": "Book T-Mac",
+      "phoneLink": "#work",
+      "socials": [
+        {
+          "label": "YouTube",
+          "link": "https://www.youtube.com/@datruthmeter"
+        },
+        {
+          "label": "Spotify",
+          "link": "https://open.spotify.com/show/3xPGcy2inEbxYGQ1jSL45C"
+        },
+        {
+          "label": "Instagram",
+          "link": "https://www.instagram.com/datruthmeter"
+        }
+      ],
+      "contactEmail": "datruthmeter@gmail.com",
+      "sendfoxUrl": "",
+      "popupOn": "yes",
+      "popupAt": 30,
+      "popupKicker": "Monthly · by email",
+      "popupTitle": "The Syllabus",
+      "popupBody": "One letter a month from T-Mac. What DaTruthMeter is working on and what is coming next.",
+      "footerLine": "Media Group LLC · Black-owned independent media",
+      "footerLinks": [
+        {
+          "label": "The Syllabus",
+          "link": "#syllabus"
+        }
+      ]
+    }
+  },
+  "content": [
+    {
+      "type": "Hero",
+      "props": {
+        "id": "Hero-1",
+        "anchor": "top",
+        "gauge": "Activate",
+        "eyebrow": "The DaTruthMeter Podcast · Season 1",
+        "headline": "Let’s\ntell da\n*truth.*",
+        "body": "Where culture meets truth and truth meets power. News, commentary and analysis on education and African American culture, from an educator who was once written off.",
+        "portrait": "/ig/portrait-color.jpg",
+        "portraitAlt": "Timothy McKinney Jr. in the DaTruthMeter studio",
+        "latestId": "xiu957SmbBw",
+        "latestKicker": "New · Episode 6 · Sep 9, 2026",
+        "latestTitle": "5 Pillars to a Better Beginning School Year"
+      }
+    },
+    {
+      "type": "Marquee",
+      "props": {
+        "id": "Marquee-1",
+        "words": [
+          {
+            "word": "Activate"
+          },
+          {
+            "word": "Motivate"
+          },
+          {
+            "word": "Educate"
+          },
+          {
+            "word": "Resuscitate"
+          },
+          {
+            "word": "Let’s tell da truth"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Episodes",
+      "props": {
+        "id": "Episodes-1",
+        "anchor": "season",
+        "gauge": "Motivate",
+        "eyebrow": "Motivate",
+        "heading": "Season ~One~",
+        "linkLabel": "Every episode on YouTube",
+        "link": "https://www.youtube.com/@datruthmeter",
+        "episodes": [
+          {
+            "videoId": "9ouQRqKziXU",
+            "number": "5",
+            "date": "Jul 28, 2026",
+            "title": "From a 1.69 GPA to Building a Black-Owned Media Platform",
+            "blurb": "Why DaTruthMeter exists, told by the man who was once written off.",
+            "thumb": "/yt/9ouQRqKziXU.jpg"
+          },
+          {
+            "videoId": "1t_ieYY9Vzs",
+            "number": "4",
+            "date": "Jul 14, 2026",
+            "title": "The Critical Role of Prevention Specialists in Supporting Students’ Mental Health",
+            "blurb": "With Ms. Tiffani Richardson, lead prevention specialist.",
+            "thumb": "/yt/1t_ieYY9Vzs.jpg"
+          },
+          {
+            "videoId": "nAfsp9BZfwE",
+            "number": "3",
+            "date": "Jul 7, 2026",
+            "title": "Why Black Educators Matter",
+            "blurb": "Representation, relationships, and outcomes.",
+            "thumb": "/yt/nAfsp9BZfwE.jpg"
+          },
+          {
+            "videoId": "SEF_mK4dBq8",
+            "number": "2",
+            "date": "Jun 24, 2026",
+            "title": "The Unfair Standard",
+            "blurb": "Who the system is measuring, and who it was built to measure.",
+            "thumb": "/yt/SEF_mK4dBq8.jpg"
+          }
+        ],
+        "shortsHeading": "In a minute",
+        "shortsNote": "Short clips · YouTube",
+        "shorts": [
+          {
+            "videoId": "xS_54On8kC4",
+            "title": "Relationships Before Rigor",
+            "note": "211 views",
+            "thumb": "/yt/xS_54On8kC4.jpg"
+          },
+          {
+            "videoId": "ap_38o-NHqI",
+            "title": "Every Grown Person’s First Teacher Was a Parent",
+            "note": "145 views",
+            "thumb": "/yt/ap_38o-NHqI.jpg"
+          },
+          {
+            "videoId": "ncP0vPUu40c",
+            "title": "From 1.69 GPA to Superintendent",
+            "note": "19 views",
+            "thumb": "/yt/ncP0vPUu40c.jpg"
+          },
+          {
+            "videoId": "2sYaybux7uw",
+            "title": "From 1.69 To Purpose",
+            "note": "19 views",
+            "thumb": "/yt/2sYaybux7uw.jpg"
+          },
+          {
+            "videoId": "6xyLbVwNGS8",
+            "title": "Black Representation Matters for Black Students’ Outcomes",
+            "note": "17 views",
+            "thumb": "/yt/6xyLbVwNGS8.jpg"
+          },
+          {
+            "videoId": "KZGSUpzrWPw",
+            "title": "Culturally Responsive Teaching: A Lead Prevention Specialist Take",
+            "note": "2 views",
+            "thumb": "/yt/KZGSUpzrWPw.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Guides",
+      "props": {
+        "id": "Guides-1",
+        "anchor": "guides",
+        "gauge": "Educate",
+        "eyebrow": "Educate",
+        "heading": "The Truth ~Resource~ Guides",
+        "intro": "Guides built from DaTruthMeter’s own reporting. Fill them in here, or print one for a classroom, a parent night, or a board meeting.",
+        "printLabel": "Print a guide",
+        "sheets": [
+          {
+            "type": "FillIn",
+            "props": {
+              "id": "FillIn-1",
+              "kicker": "Guide No. 01",
+              "title": "The voucher math,",
+              "titleItalic": "Arizona",
+              "width": "left",
+              "objective": "Compare what a program was promised to cost with what it cost, and translate the gap into classrooms.",
+              "blanks": [
+                {
+                  "before": "Arizona’s voucher program was projected at $",
+                  "answer": "65",
+                  "leeway": "0",
+                  "after": " million a year."
+                },
+                {
+                  "before": "The real number came in at $",
+                  "answer": "944",
+                  "leeway": "0",
+                  "after": " million,"
+                },
+                {
+                  "before": "and opened a $",
+                  "answer": "320",
+                  "leeway": "0",
+                  "after": " million hole in the budget."
+                },
+                {
+                  "before": "Spent on public school teachers at $60,000 a year, $944 million pays ",
+                  "answer": "15733",
+                  "leeway": "2",
+                  "after": " teachers."
+                }
+              ],
+              "hint": "Hint: divide $944 million by $60,000.",
+              "discuss": [
+                {
+                  "question": "Who made the $65 million projection, and who pays when it is wrong?"
+                },
+                {
+                  "question": "What would 15,733 teachers change in your district?"
+                }
+              ],
+              "sourceText": "“The Corporate Coup of American Education,” DaTruthMeter, citing reporting on Arizona’s ESA program",
+              "sourceLink": "https://www.datruthmeter.com/post/the-corporate-coup-of-american-education"
+            }
+          },
+          {
+            "type": "Docket",
+            "props": {
+              "id": "Docket-1",
+              "kicker": "Guide No. 02",
+              "title": "DeRolph v. State,",
+              "titleItalic": "the docket",
+              "width": "right",
+              "objective": "Read four rulings from the Ohio Supreme Court and explain why the same answer came back three times.",
+              "rows": [
+                {
+                  "term": "1997",
+                  "name": "DeRolph I",
+                  "disposition": "Unconstitutional",
+                  "tone": "red",
+                  "text": "The Ohio Supreme Court rules the school funding system unconstitutional. It leans too heavily on local property taxes, so a child’s school depends on their zip code."
+                },
+                {
+                  "term": "2000",
+                  "name": "DeRolph II",
+                  "disposition": "Unconstitutional",
+                  "tone": "red",
+                  "text": "The court looks again after the legislature’s changes. Still unconstitutional."
+                },
+                {
+                  "term": "2001",
+                  "name": "DeRolph III",
+                  "disposition": "Split court",
+                  "tone": "navy",
+                  "text": "A split court says the system could pass if more changes are made. The state asks it to reconsider."
+                },
+                {
+                  "term": "2002",
+                  "name": "DeRolph IV",
+                  "disposition": "Vacated; unconstitutional",
+                  "tone": "red",
+                  "text": "The court vacates its 2001 decision and says it plainly again: unconstitutional. Then it steps back, leaving the fix to the legislature."
+                },
+                {
+                  "term": "Now",
+                  "name": "Still waiting",
+                  "disposition": "Pending",
+                  "tone": "gray",
+                  "text": "Urban districts like Dayton, Cleveland, Akron and Toledo are still living with the gap, while vouchers can exceed $6,000 for K to 8 and $8,000 for high school."
+                }
+              ],
+              "discuss": [
+                {
+                  "question": "What does it mean that a child’s school depends on their zip code?"
+                },
+                {
+                  "question": "If the court stepped back in 2002, who is responsible for the fix now?"
+                }
+              ],
+              "sourceText": "“Property Taxes, Vouchers & Broken Courts,” DaTruthMeter. Rulings: DeRolph v. State, 1997, 2000, 2001, 2002",
+              "sourceLink": "https://www.datruthmeter.com/post/property-taxes-vouchers-and-broken-courts-the-perfect-storm-destroying-ohio-s-public-schools"
+            }
+          },
+          {
+            "type": "TrueFalse",
+            "props": {
+              "id": "TrueFalse-1",
+              "kicker": "Guide No. 03",
+              "title": "True or false:",
+              "titleItalic": "who shapes the classroom",
+              "width": "wide",
+              "objective": "Commit to an answer before the facts show up. Then trace each fact to its source.",
+              "questions": [
+                {
+                  "statement": "Private philanthropies spend nearly $4 billion a year trying to transform K to 12 education.",
+                  "answer": "true",
+                  "note": "True. Nearly $4 billion a year, led by the Gates, Broad and Walton foundations.",
+                  "cite": "Cited in “The Corporate Coup of American Education” · Dissent Magazine"
+                },
+                {
+                  "statement": "For-profit charter schools only exist in a handful of states.",
+                  "answer": "false",
+                  "note": "False. Over 1,100 charter schools are run for profit across 26 states and D.C., with the highest concentrations in Arizona, Florida, Michigan, Nevada and Ohio.",
+                  "cite": "Cited in “The Corporate Coup of American Education” · Network for Public Education, “Chartered For Profit”"
+                },
+                {
+                  "statement": "Most of Michigan’s charter schools are run by the public school districts themselves.",
+                  "answer": "false",
+                  "note": "False. 81 percent of the state’s nearly 300 charter schools contract with private management companies.",
+                  "cite": "Cited in “The Corporate Coup of American Education” · Network for Public Education"
+                }
+              ],
+              "sourceText": "“The Corporate Coup of American Education,” DaTruthMeter",
+              "sourceLink": "https://www.datruthmeter.com/post/the-corporate-coup-of-american-education"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "PhotoWall",
+      "props": {
+        "id": "PhotoWall-1",
+        "anchor": "feed",
+        "gauge": "",
+        "heading": "From the *feed*",
+        "linkLabel": "@datruthmeter on Instagram",
+        "link": "https://www.instagram.com/datruthmeter",
+        "photos": [
+          {
+            "image": "/ig/ohio-schools.jpg",
+            "caption": "Activate | Motivate | Educate | Resuscitate | Fight for our Public Schools",
+            "link": "https://www.instagram.com/p/DV5s7mAli_C/",
+            "shape": "tall"
+          },
+          {
+            "image": "/ig/portrait-color.jpg",
+            "caption": "#datruthmeter #2026 #cultural #education",
+            "link": "https://www.instagram.com/p/DTU9y7llrQT/",
+            "shape": "square"
+          },
+          {
+            "image": "/ig/podcast-summit.jpg",
+            "caption": "As real as it gets",
+            "link": "https://www.instagram.com/p/DaWhVAZOpwb/",
+            "shape": "wide"
+          },
+          {
+            "image": "/ig/tiffani-split.jpg",
+            "caption": "Education and Politics are deeply interconnected.",
+            "link": "https://www.instagram.com/p/Da8Duc8BJ9t/",
+            "shape": "tall"
+          },
+          {
+            "image": "/ig/coalition.jpg",
+            "caption": "We should all be allies and a COALITION OF ONE!!",
+            "link": "https://www.instagram.com/p/DTxEJ0vFquU/",
+            "shape": "tall"
+          },
+          {
+            "image": "/ig/nutrition-facts.jpg",
+            "caption": "#letstelldatruth",
+            "link": "https://www.instagram.com/p/DTVAwfKji3t/",
+            "shape": "tall"
+          },
+          {
+            "image": "/ig/ep6-clip.jpg",
+            "caption": "Relationship building with students are an integral part in establishing a positive beginning to the school year!!",
+            "link": "https://www.instagram.com/p/DdDmfKCNYAA/",
+            "shape": "tall"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Newsletter",
+      "props": {
+        "id": "Newsletter-1",
+        "anchor": "syllabus",
+        "gauge": "",
+        "eyebrow": "The newsletter · monthly",
+        "heading": "The ~Syllabus~",
+        "body": "One letter a month from T-Mac, straight to your inbox. What DaTruthMeter is working on, what is being offered, and what is coming next.",
+        "bullets": [
+          {
+            "text": "New episodes"
+          },
+          {
+            "text": "New resource guides"
+          },
+          {
+            "text": "Events and offers"
+          }
+        ],
+        "button": "Get The Syllabus"
+      }
+    },
+    {
+      "type": "Essays",
+      "props": {
+        "id": "Essays-1",
+        "anchor": "essays",
+        "gauge": "",
+        "eyebrow": "The blog · columns by Timothy McKinney Jr.",
+        "heading": "Essays",
+        "intro": "On education, culture, and the podcast.",
+        "essays": [
+          {
+            "kicker": "Policy",
+            "title": "The Corporate Coup of American Education",
+            "dek": "How lobbyists, reformers, and politicians are failing America’s students.",
+            "link": "https://www.datruthmeter.com/post/the-corporate-coup-of-american-education"
+          },
+          {
+            "kicker": "Ohio",
+            "title": "Property Taxes, Vouchers & Broken Courts",
+            "dek": "Ohio’s school funding problem isn’t just complicated. It has been ruled unconstitutional, and students are still paying the price.",
+            "link": "https://www.datruthmeter.com/post/property-taxes-vouchers-and-broken-courts-the-perfect-storm-destroying-ohio-s-public-schools"
+          },
+          {
+            "kicker": "Democracy",
+            "title": "Who Are the True Patriots for Democracy?",
+            "dek": "Patriotism is loyalty to the law and the Constitution, not blind devotion to a leader.",
+            "link": "https://www.datruthmeter.com/blog"
+          }
+        ],
+        "readLabel": "Read",
+        "band": "navy"
+      }
+    },
+    {
+      "type": "Booking",
+      "props": {
+        "id": "Booking-1",
+        "anchor": "work",
+        "gauge": "Resuscitate",
+        "eyebrow": "Resuscitate",
+        "heading": "Book *T-Mac*",
+        "cards": [
+          {
+            "title": "Keynotes & PD",
+            "description": "Relationships before rigor. Culturally responsive teaching. School culture that holds all year.",
+            "who": "Schools, districts, conferences"
+          },
+          {
+            "title": "Be a guest",
+            "description": "Educators, counselors, prevention specialists, parents. If you do the work, come talk about it.",
+            "who": "The DaTruthMeter Podcast"
+          },
+          {
+            "title": "Partner with DaTruthMeter",
+            "description": "Districts, nonprofits and brands who want to reach Black educators and families.",
+            "who": "DaTruthMeter Media Group LLC"
+          }
+        ],
+        "photo": "/ig/podcast-summit.jpg",
+        "photoAlt": "T-Mac at The Podcast Summit",
+        "quoteLabel": "In his words",
+        "quote": "We should all be allies and a COALITION OF ONE!!",
+        "formHeading": "Get in touch",
+        "formOptions": [
+          {
+            "label": "Keynote or PD"
+          },
+          {
+            "label": "Be a guest"
+          },
+          {
+            "label": "Partner"
+          }
+        ]
+      }
+    },
+    {
+      "type": "About",
+      "props": {
+        "id": "About-1",
+        "anchor": "about",
+        "gauge": "",
+        "eyebrow": "About",
+        "heading": "What DaTruth*Meter* is",
+        "paragraphs": [
+          {
+            "text": "DaTruthMeter Media Group was created by Timothy McKinney Jr. to amplify the stories, issues and excellence of the African American community, particularly in education, culture and public impact."
+          },
+          {
+            "text": "We are an independent Black-owned media company by design, committed to truth-telling, narrative-shifting, and redefining what media can be for Black educators, students and African American culture."
+          }
+        ],
+        "belief": "We believe in the power of story. We believe in the power of culture. We believe media should do more than inform. *It should ignite change.*",
+        "storyEyebrow": "Why it exists",
+        "bigNumber": "1.69",
+        "tagline": "to *purpose.*",
+        "intro": "Timothy McKinney Jr. is an educator, entrepreneur and public servant.",
+        "quote": "Your grades may describe a moment. They do not determine your destiny. Because your current chapter is not your final chapter.",
+        "quoteCite": "Timothy McKinney Jr. · on Instagram, July 2026",
+        "stats": [
+          {
+            "value": "1.69",
+            "label": "High school GPA"
+          },
+          {
+            "value": "3",
+            "label": "Degrees, two of them master’s"
+          },
+          {
+            "value": "AP",
+            "label": "Assistant principal today"
+          }
+        ],
+        "videoId": "9ouQRqKziXU",
+        "buttonLabel": "Watch his story · Episode 5",
+        "band": "paper"
+      }
+    }
+  ],
+  "zones": {}
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+@import "tailwindcss";
+
+/* Palette: every value is a row in discovery/ig/brand-tokens.json.
+   ink #101116, paper #F5F0E9, red #AB5448 (22 of 31 photos, the thermometer),
+   blood #92161D, navy #1E3B57. Copper and the purple video frame are left out on purpose. */
+@theme {
+  --color-ink: #101116;
+  --color-paper: #F5F0E9;
+  --color-red: #AB5448;
+  --color-blood: #92161D;
+  --color-navy: #1E3B57;
+  /* Fixed light and dark, same two hex values as paper and ink, for surfaces
+     that must not flip with the theme (the navy Essays band, the video modal). */
+  --color-cream: #F5F0E9;
+  --color-night: #101116;
+  /* Condensed caps: the letterforms of his own DATRUTHMETER wordmark. */
+  --font-display: "Oswald", "Arial Narrow", sans-serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+:root { --p: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--color-blood); color: var(--color-paper); }
+
+.display { font-family: var(--font-display); text-transform: uppercase; letter-spacing: -0.01em; line-height: 0.86; }
+.mono { font-family: var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* Grain over the dark ground so large ink fields don't read as flat UI. */
+.grain::before {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 60; opacity: .07;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* Photos stay in full color so the page stays vibrant. Hover drops them to gray
+   (Craig's call, 2026-09-15). */
+.grade, .grade-hover { filter: none; transition: filter .45s ease, transform .6s ease; }
+.grade:hover, .group:hover .grade-hover { filter: grayscale(1) contrast(1.08); }
+.group:hover .grade-hover { transform: scale(1.03); }
+
+.marquee { display: flex; width: max-content; animation: marquee 38s linear infinite; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .marquee { animation: none; } html { scroll-behavior: auto; } }
+
+.outline-text { color: transparent; -webkit-text-stroke: 2px var(--color-paper); }
+.outline-red { color: transparent; -webkit-text-stroke: 2px var(--color-red); }
+
+/* The Hub (merged concept, 2026-09-29): light and dark from the same two palette rows.
+   Light mode swaps ink and paper, so every ground/text pairing inverts together and the
+   1.69 band, which is paper-on-ink in dark, becomes the dark band in light. */
+html { color-scheme: dark; }
+/* .hub-light sits on the page root as well as <html>, so the editor canvas (which only has
+   the page root, see src/edit/scope-css.js) flips with the same rule. */
+html.hub-light, .hub-light { --color-ink: #F5F0E9; --color-paper: #101116; color-scheme: light; }
+html.hub-light .grain::before, .hub-light.grain::before { opacity: .05; }
+
+/* From the Feed, carried over from The Record: newspaper columns with rules. */
+.feed-cols { columns: 1; column-gap: 28px; column-rule: 1px solid color-mix(in srgb, var(--color-paper) 22%, transparent); }
+@media (min-width: 640px) { .feed-cols { columns: 2; } }
+@media (min-width: 1024px) { .feed-cols { columns: 4; } }
+.feed-cols figure { break-inside: avoid; margin-bottom: 26px; }
+
+.pop-in { animation: pop-in .35s cubic-bezier(.2,.8,.2,1); }
+@keyframes pop-in { from { transform: translateY(16px); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .pop-in { animation: none; } }
+
+/* A band that stays ink-on-paper in both themes (the Truth Resource Guides worksheets). */
+.fixed-paper { --color-ink: #101116; --color-paper: #F5F0E9; color-scheme: light; }
+
+/* Section bands Tim can pick per section in the editor. ink and paper flip with the theme;
+   navy, red and fixed paper stay put in both. */
+.band-ink { background: var(--color-ink); color: var(--color-paper); }
+.band-paper { background: var(--color-paper); color: var(--color-ink); }
+.band-navy { background: var(--color-navy); color: var(--color-cream); }
+.band-red { background: var(--color-red); color: var(--color-cream); }
+
+/* Worksheets (carried over from The Record concept, 2026-09-29). */
+.rec-root { font-family:"Source Serif 4", Georgia, serif; }
+.rec-display { font-family:"Fraunces", Georgia, serif; font-variation-settings:"opsz" 144; font-weight:600; letter-spacing:-0.015em; }
+.rec-ital { font-family:"Fraunces", Georgia, serif; font-style:italic; font-weight:400; font-variation-settings:"opsz" 144; }
+.rec-mono { font-family:"IBM Plex Mono", ui-monospace, monospace; text-transform:uppercase; letter-spacing:.08em; }
+.rec-sheet { background:#F5F0E9; border:1px solid #101116; padding:clamp(18px,3vw,34px);
+  background-image:repeating-linear-gradient(to bottom, transparent 0 31px, rgba(30,59,87,.10) 31px 32px); position:relative; }
+.rec-sheet::before { content:""; position:absolute; top:0; bottom:0; left:clamp(10px,1.6vw,20px); border-left:1px solid rgba(171,84,72,.45); }
+.rec-line { display:inline-block; border-bottom:1px solid #101116; height:1em; vertical-align:baseline; }
+.rec-blank { background:transparent; border:0; border-bottom:2px solid #101116; text-align:center; font-family:"IBM Plex Mono", monospace; font-size:16px; padding:0 4px; margin:0 3px; line-height:1.4; color:#1E3B57; }
+.rec-blank:focus { outline:none; border-bottom-color:#92161D; background:rgba(171,84,72,.08); }
+.rec-right { border-bottom-color:#1E3B57; background:rgba(30,59,87,.08); }
+.rec-wrong { border-bottom-color:#92161D; background:rgba(146,22,29,.10); }
+.rec-btn { font-family:"IBM Plex Mono", monospace; text-transform:uppercase; letter-spacing:.08em; font-size:12px; background:#101116; color:#F5F0E9; padding:12px 18px; border:1px solid #101116; }
+.rec-btn:hover { background:#92161D; border-color:#92161D; }
+.rec-btn-ghost { font-family:"IBM Plex Mono", monospace; text-transform:uppercase; letter-spacing:.08em; font-size:12px; padding:12px 18px; border:1px solid #101116; }
+.rec-btn-ghost:hover { background:rgba(16,17,22,.06); }
+.rec-docket th { border-bottom:2px solid #101116; padding:6px 8px 6px 0; font-weight:400; }
+.rec-docket td { padding:10px 8px 10px 0; vertical-align:top; }
+.rec-row td { border-top:1px solid rgba(16,17,22,.25); }
+.rec-row:hover, .rec-row-open { background:rgba(171,84,72,.08); }
+.rec-ruling td { background:rgba(171,84,72,.08); }
+.rec-tfbtn { font-family:"IBM Plex Mono", monospace; text-transform:uppercase; letter-spacing:.08em; font-size:12px; border:1px solid #101116; padding:9px 16px; }
+.rec-tfbtn:hover { background:rgba(16,17,22,.06); }
+.rec-tf-right { background:#1E3B57 !important; color:#F5F0E9; border-color:#1E3B57; }
+.rec-tf-wrong { background:#92161D !important; color:#F5F0E9; border-color:#92161D; }
+@media print {
+  .rec-noprint, .fixed { display:none !important; }
+}
