@@ -74,6 +74,17 @@ html.hub-light .grain::before, .hub-light.grain::before { opacity: .05; }
 
 /* A band that stays ink-on-paper in both themes (the Truth Resource Guides worksheets). */
 .fixed-paper { --color-ink: #101116; --color-paper: #F5F0E9; color-scheme: light; }
+.fixed-night { --color-ink: #101116; --color-paper: #F5F0E9; color-scheme: dark; }
+/* Forms that sit on a surface of the opposite theme: on-light = cream card, on-night = red or dark bar. */
+.on-light { --color-paper: #101116; --color-ink: #F5F0E9; }
+.on-night { --color-paper: #F5F0E9; --color-ink: #101116; }
+.on-night button.display { background: #101116; color: #F5F0E9; }
+.on-night button.display:hover { background: #F5F0E9; color: #101116; }
+.on-night input { border-color: rgb(245 240 233 / .55); }
+.on-night input::placeholder { color: rgb(245 240 233 / .8); }
+.on-night input:focus { border-color: #F5F0E9; }
+@keyframes sweep { from { transform: skewX(-6deg) rotate(var(--tilt)) scaleX(0); } to { transform: skewX(-6deg) rotate(var(--tilt)) scaleX(1); } }
+@media (prefers-reduced-motion: reduce) { [style*="sweep"] { animation: none !important; } }
 
 /* Section bands Tim can pick per section in the editor. ink and paper flip with the theme;
    navy, red and fixed paper stay put in both. */

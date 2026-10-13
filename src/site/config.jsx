@@ -1,6 +1,7 @@
+import { SyllabusSection } from './syllabus.jsx';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
-  Page, Accent, BANDS, Img, Thermo, MeterRail, Player, MarqueeRow, ThemeSwitch, SyllabusForm, SyllabusPopup,
+  Page, Accent, BANDS, Img, Thermo, MeterRail, Player, MarqueeRow, ThemeSwitch, SyllabusPopup,
   InquiryForm, POPUP_KEY, store, useScroll, useTheme, ytThumb, usePage,
 } from './kit';
 import { FillIn, Docket, TrueFalse } from './worksheets';
@@ -184,7 +185,7 @@ function Episodes({ eyebrow, heading, linkLabel, link, episodes = [], shortsHead
           {episodes.map((e, i) => (
             <button key={i} onClick={() => play(e.videoId)}
               className="group grid w-full grid-cols-[auto_1fr] items-center gap-5 border-b border-paper/15 py-7 text-left sm:grid-cols-[7rem_1fr_16rem] sm:gap-10">
-              <span className="display text-7xl text-paper/20 transition-colors group-hover:text-red sm:text-8xl">{String(e.number ?? '').padStart(2, '0')}</span>
+              <span className="display text-7xl text-paper/20 transition-colors group-hover:text-red sm:text-8xl">{e.number ? String(e.number).padStart(2, '0') : '▶'}</span>
               <span>
                 <span className="mono block text-[10px] text-paper/50">{e.date}</span>
                 <span className="display mt-1 block text-3xl leading-none sm:text-5xl">{e.title}</span>
@@ -267,30 +268,8 @@ function PhotoWall({ heading, linkLabel, link, photos = [], ...m }) {
   );
 }
 
-function Newsletter({ eyebrow, heading, body, bullets = [], button, ...m }) {
-  return (
-    <section {...mark(m)} className={`border-t border-paper/10 ${SECTION}`}>
-      <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-end">
-        <div>
-          <Eyebrow>{eyebrow}</Eyebrow>
-          <Heading text={heading} outline="outline-red" className="mt-4 text-[clamp(4rem,12vw,11rem)]" />
-        </div>
-        <div className="pb-3">
-          <p className="max-w-lg text-xl leading-snug text-paper/85">{body}</p>
-          {bullets.length > 0 && (
-            <ul className="mono mt-6 grid gap-2 text-[11px] text-paper/70 sm:grid-cols-3">
-              {bullets.map((x, i) => (
-                <li key={i} className="flex items-center gap-2"><span className="h-2 w-2 rounded-full bg-red" />{x.text}</li>
-              ))}
-            </ul>
-          )}
-        </div>
-      </div>
-      <div className="mt-12 border-y border-paper/15 py-8">
-        <SyllabusForm button={button} onDone={() => store.set(POPUP_KEY, 'subscribed')} />
-      </div>
-    </section>
-  );
+function Newsletter({ anchor, gauge, ...rest }) {
+  return <SyllabusSection {...rest} mark={mark({ anchor, gauge })} shellClass={`border-t border-paper/10 ${SECTION}`} />;
 }
 
 function Essays({ eyebrow, heading, intro, essays = [], readLabel, band = 'navy', ...m }) {
@@ -680,9 +659,15 @@ export function makeConfig(photoField = (label) => ({ type: 'text', label })) {
           body: area('Text'),
           bullets: list('Points', { text: text('Point') }, { text: '' }, (x) => x.text || 'Point'),
           button: text('Button'),
+          postsHeading: text('Heading above the blog posts'),
+          readLabel: text('Link wording'),
+          posts: list('Blog posts (the first one shows large)', {
+            kicker: text('Topic'), title: text('Title'), dek: area('One line about it'), date: text('Date (optional)'),
+            image: photoField('His graphic (optional)'), link: text('Link to the post'),
+          }, { kicker: '', title: 'New post', dek: '', date: '', image: '', link: '' }, (x) => x.title || 'Post'),
           ...placement,
         },
-        defaultProps: { eyebrow: 'The newsletter · monthly', heading: 'The ~Syllabus~', body: '', bullets: [], button: 'Get The Syllabus', anchor: '', gauge: '' },
+        defaultProps: { eyebrow: 'The newsletter · monthly', heading: 'The ~Syllabus~', body: '', bullets: [], button: 'Get The Syllabus', postsHeading: 'From the blog', readLabel: 'Read', posts: [], anchor: '', gauge: '' },
         render: Newsletter,
       },
 
